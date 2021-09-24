@@ -49,10 +49,172 @@ a {
 }
 
 /* header導覽列製作 */
-
+header {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  z-index: 999;
+  background-color: white;
+}
 .header-wrapper {
+  width: 100%;
   display: grid;
-  grid-template-columns:50px minmax(250px ,2fr)  50px 50px 10px ;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 50px;
+  justify-items: center;
+  align-items: center;
 }
 
+.header-brand {
+  display: flex;
+  flex-direction: row;
+  grid-column: 2;
+  align-items: center;
+}
+.img-logo {
+  grid-column: 3;
+  width: 40px;
+  margin-right: 10px;
+}
+
+.brand-name {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.nav-list {
+  display: none;
+  top: 60px;
+}
+
+.header-icon {
+  width: auto;
+  justify-self: right;
+  font-size: 25px;
+}
+.icon {
+  margin-left: 10px;
+  margin-right: 20px;
+}
+#search {
+  position: absolute;
+  left: 40px;
+}
+
+/* 選擇列表 */
+
+.filter-banner {
+  padding-top: 50px;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+}
+.filter-title {
+  margin-top: 10px;
+  line-height: 30px;
+  font-size: 20px;
+}
+.section-group {
+  padding-top: 10px;
+}
+.filter-select {
+  width: 40%;
+  height: 40px;
+  margin: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-weight: 700;
+  padding: 10px;
+}
+
+/* 卡片列表 */
+.show {
+  background-color: white;
+}
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-gap: 10px;
+}
+.card {
+  width: 100%;
+}
+.card-model {
+  position: relative;
+}
+.card-img {
+  width: 100%;
+}
+.card-icon {
+  position: absolute;
+  font-size: 25px;
+  right: 20px;
+  top: 20px;
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border-radius: 50%;
+  text-align: center;
+}
+.card-info {
+  text-align: center;
+}
+.card-title {
+  font-size: 13px;
+  font-weight: 100;
+}
+
+.pagination {
+  text-align: center;
+  background-color: white;
+  font-size: 13px;
+  line-height: 5rem;
+}
+
+/* 表單banner */
+
+.forn-banner {
+  width: 100%;
+  background-color: white;
+}
+.forn {
+  position: relative;
+}
+.forn-img {
+  width: 100%;
+  z-index: -1;
+}
+.forn-group {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+  bottom: 20%;
+}
+.forn-title {
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.forn-text {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.forn-email {
+  border: 0px;
+  border-radius: 50px 0 0 50px;
+  height: 50px;
+  width: 3fr;
+}
+
+.forn-btn {
+  color: white;
+  background-color: black;
+  border: 0px;
+  border-radius: 0 50px 50px 0;
+  height: 50px;
+}
