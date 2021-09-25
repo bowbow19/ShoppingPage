@@ -133,8 +133,8 @@ header {
 }
 .card-wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 50%);
-  grid-gap: 10px;
+  grid-template-columns: repeat(2 , 1fr);
+  grid-gap: 5px;
 }
 .card {
   width: 100%;
@@ -161,14 +161,26 @@ header {
 }
 .card-title {
   font-size: 13px;
-  font-weight: 100;
+  font-family: "M PLUS Rounded 1c",
+  Helvetica,
+  Arial,
+  sans-serif;
 }
+.card-price{
+    font-size: 13px;
+}
+.card-soldout{
+  font-family: "M PLUS Rounded 1c",
+  Helvetica,
+  Arial,
+  sans-serif;
+  font-size: 13px;
 
+}
 .pagination {
   text-align: center;
   background-color: white;
   font-size: 13px;
-  line-height: 5rem;
 }
 
 /* 表單banner */
@@ -179,27 +191,27 @@ header {
 }
 .forn {
   position: relative;
-}
-.forn-img {
-  width: 100%;
-  z-index: -1;
-}
-.forn-group {
-  position: absolute;
+  background-image: url(https://assets-lighthouse.alphacamp.co/uploads/image/file/14376/template.png);
+  background-size:  800px 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 230px;
   text-align: center;
-  width: 100%;
-  z-index: 1;
-  bottom: 20%;
-}
-.forn-title {
-  font-size: 18px;
-  font-weight: 700;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 40px 0 0 0;
 }
 
-.forn-text {
-  margin: 10px;
+
+.forn-title {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "M PLUS Rounded 1c",
+      Helvetica,
+      Arial,
+      sans-serif;
+}
+
+.forn-group {
+  margin: 30px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -217,4 +229,59 @@ header {
   border: 0px;
   border-radius: 0 50px 50px 0;
   height: 50px;
+}
+.forn-connect{
+    font-family: "M PLUS Rounded 1c",
+    Helvetica,
+    Arial,
+    sans-serif;
+    font-size: 13px;
+}
+.connect-us{
+  text-decoration: underline;
+  color: black;
+
+}
+
+.footer-copyright{
+  text-align: center;
+  font-size: 13px;
+  font-family: "M PLUS Rounded 1c",
+  Helvetica,
+  Arial,
+  sans-serif;
+  background-color: #F0F0F0;
+  height: 30px;
+}
+
+@media screen and (min-width:600px) {
+
+  .filter-select{
+    width: 25%;
+  }
+  .card-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .forn-title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+@media screen and (min-width:960px){
+
+
+
+  
+.filter-select {
+  width: 15%;
+}
+
+  .card-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+.forn{
+    background-size: 80% auto;
+
+}
 }
