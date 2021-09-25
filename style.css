@@ -270,8 +270,12 @@ header {
 
 @media screen and (min-width:960px){
 
-
-
+.nav-list{
+  display: block;
+}
+.fa-search{
+  
+}
   
 .filter-select {
   width: 15%;
@@ -284,4 +288,5 @@ header {
     background-size: 80% auto;
 
 }
+
 }
